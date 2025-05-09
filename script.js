@@ -10,24 +10,28 @@ const penCalendar = {
     may: 2,
     june: 1,
 };
-const topPen = '  /\\ \n /__\\ '
-const eraser = ' |  | '
+
+const topOfThePen = '  /\\ \n /__\\ ';
+const eraser = ' |  | ';
 
 function drawMyPen(month){
     let monthPenSize = chooseMonthInCalendar(month);
     let index = 0;
 
-    console.log(topPen);
+    console.log(topOfThePen);
 
     while (monthPenSize > index) {
         console.log(' |||| ');
         index++;
     }
-    console.log(' |__| ')
+
+    console.log(' |__| ');
+
     if (monthPenSize > 4) {
-        console.log(eraser)
+        console.log(eraser);
     }
-    console.log(' |__| ')
+
+    console.log(' |__| ');
 }
 
 function chooseMonthInCalendar(month){
@@ -66,19 +70,3 @@ function chooseMonthInCalendar(month){
 }
 
 drawMyPen('febuary');
-
-    // /\
-    // /__\
-    // ||||
-    // ||||
-    // ||||
-    // ||||
-    // ||||
-    // ||||
-    // ||||
-    // ||||
-    // ||||
-    // ||||
-    // |__|
-    // |  |
-    // |__|
